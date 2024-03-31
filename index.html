@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Financeiro</title>
+</head>
+<body class="p-3">
+    Fixos mensais <input type="text" value="1090" disabled />
+    Estimativa semanal <input id="configSemanal" type="text" value="280" disabled />
+
+    <div class="mt-5" style="display: flex; align-items: center;">
+        <div class="progress me-3" style="width: 300px; text-align: center;">
+            <div id="bar1" class="progress-bar progress-bar-striped mw-100" role="progressbar" aria-valuenow="" aria-valuemin="0" aria-valuemax="100"></div>
+            <p id="resto1" style="margin: 0 auto;"></p>
+        </div> 
+        <span class="me-3">Q1</span>
+        <input id="txt1" type="text" value="0" />
+    </div>
+
+    <div class="mt-5" style="display: flex; align-items: center;">
+        <div class="progress me-3" style="width: 300px;">
+            <div id="bar2" class="progress-bar progress-bar-striped mw-100" role="progressbar" aria-valuenow="" aria-valuemin="0" aria-valuemax="100"></div>
+            <p id="resto2" style="margin: 0 auto;"></p>
+        </div> 
+        <span class="me-3">Q2</span>
+        <input id="txt2" type="text" value="0" />
+    </div>
+
+    <div class="mt-5" style="display: flex; align-items: center;">
+        <div class="progress me-3" style="width: 300px;">
+            <div id="bar3" class="progress-bar progress-bar-striped mw-100" role="progressbar" aria-valuenow="" aria-valuemin="0" aria-valuemax="100"></div>
+            <p id="resto3" style="margin: 0 auto;"></p>
+        </div> 
+        <span class="me-3">Q3</span>
+        <input id="txt3" type="text" value="0" />
+    </div>
+
+    <div class="mt-5" style="display: flex; align-items: center;">
+        <div class="progress me-3" style="width: 300px;">
+            <div id="bar4" class="progress-bar progress-bar-striped mw-100" role="progressbar" aria-valuenow="" aria-valuemin="0" aria-valuemax="100"></div>
+            <p id="resto4"style="margin: 0 auto;"></p>
+        </div> 
+        <span class="me-3">Q4</span>
+        <input id="txt4" type="text" value="0" />
+    </div>
+
+    <div class="mt-5">
+        <button id="btnNovo" class="btn btn-secondary">Novo mês</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
